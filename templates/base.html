@@ -42,10 +42,8 @@
               <ul class="dropdown-list">
                 <li><a href="{% url 'feedback' %}">Feedback</a></li>
                 <li><a href="{% url 'review' %}">Reviews</a></li>
-                <li><a href="#">Help</a></li>
               </ul>
             </li>
-            <li><a href="#">Contact</a></li>
             <li>
               {% if user.is_authenticated %}
            <a href="{% url 'logout' %}"><button class="btn">Logout</button></a>

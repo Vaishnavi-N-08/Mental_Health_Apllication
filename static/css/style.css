@@ -458,7 +458,7 @@ hr.rounded {
     position: absolute;
     width: 110px;
     height: 100%;
-    background: linear-gradient(to right, #ff105f, #ffad0f);
+    background:var(--primary);
     border-radius: 30px;
     transition: 0.5s;
   }
@@ -496,7 +496,7 @@ hr.rounded {
     margin: 30px auto;
     cursor: pointer;
     display: block;
-    background: linear-gradient(to right, #ff105f, #ffad0f);
+    background:var(--primary);
     border: 0;
     outline: none;
     border-radius: 30px;
@@ -710,9 +710,9 @@ form .category label .dot {
 #dot-3:checked ~ .category label .three {
   background-color: rgb(3, 133, 126) !important;
 }
-form input[type="radio"] {
+/* form input[type="radio"] {
   display: none;
-}
+} */
 form .button {
   height: 45px;
   margin: 35px 0;
