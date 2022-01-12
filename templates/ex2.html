@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<!-- <link rel="stylesheet" href="{% static 'css\ex1.css' %}"> -->
+<link rel="stylesheet" href="{% static 'css\style.css' %}">
+
+{% endblock %}
+
+{% block body %}
+<main>
+  <section class="container">
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex2.png' %}" alt="" style="width: 100%; height: auto;">
+        <div  class="caption">
+          <h1>Identify your values</h1>
+          <p>When you’re feeling disconnected, identifying what you value most in life—whether it’s family, travel or creativity—can help you find meaning and purpose.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex2.png' %}" alt="" style="width: 100%; height: auto;">
+        <div  class="caption">
+          <p>Take a moment to consider what your values are. Your values are the traits that are most important to you, like honesty, humour, or patience.<br><br>
+            Try to think of at least 3 values.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex2.png' %}" alt="" style="width: 100%; height: auto;">
+        <div  class="caption">
+          <p>Once you have your values, think of how you can apply at least one of them to something you do today. For example, if you value kindness, try checking in with someone you care about. If you value humour, share a video that makes you laugh.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex2.png' %}" alt="" style="width: 100%; height: auto;">
+        <div class="caption">
+          <p>The next time you decide how to spend your time, ask yourself if it aligns with your personal values. When you act in a way that matches what you value most, you’ll find yourself more in tune with the world around you.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pagination">
+      <div class="buttons">
+        <br>
+        <button id="pre"
+        class="btn" style="font-size: 2rem;">Previous</button>
+        <button  id="nex" class="btn" style="font-size: 2rem;">Next</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="{% static 'js\app.js' %}"></script>
+
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<!-- <link rel="stylesheet" href="{% static 'css\ex1.css' %}"> -->
+<link rel="stylesheet" href="{% static 'css\style.css' %}">
+{% endblock %}
+
+{% block body %}
+<main>
+  <section class="container">
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex7.png' %}" alt="" style="width: 100%; height: auto;">
+        <div class="caption">
+          <h1>Stop saying “should”</h1>
+          <p>It’s easy to get caught up in regret, or focus on what you “should” be doing based on expectations that
+            other people have placed on you. By shifting your mindset to focus on what you want, you can start to
+            improve your mood.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex7.png' %}" alt="" style="width: 100%; height: auto;">
+        <div class="caption">
+          <p>What’s something you think you “should” do or be? Try completing this sentence to get started:<br><br>
+            I should ______, because ______.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex7.png' %}" alt="" style="width: 100%; height: auto;">
+        <div class="caption">
+          <p>
+            How did you feel when you just reflected on what you should be doing? Motivated? Ashamed? Annoyed?</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex7.png' %}" alt="" style="width: 100%; height: auto;">
+        <div class="caption">
+          <p>Now replace the “should” in your previous statement with “prefer to”:<br><br>
+            I prefer to ______, because ______.<br><br>
+            How does thinking about your preferences—instead of others’ expectations—feel different?</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex7.png' %}" alt="" style="width: 100%; height: auto;">
+        <div class="caption">
+          <p>
+            You may notice that shifting your language from “should” to “prefer” causes you to think about the reasons
+            why you want to do something...and the reasons why you don’t want to do something, too.<br><br>
+            Taking the time to think about what’s most important to you can relieve the pressure you place on yourself,
+            and move you towards a more personal (and doable!) path forward.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination">
+      <div class="buttons">
+        <br>
+        <button id="pre" class="btn" style="font-size: 2rem;">Previous</button>
+        <button id="nex" class="btn" style="font-size: 2rem;">Next</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="{% static 'js\app.js' %}"></script>
+
+{% endblock %}

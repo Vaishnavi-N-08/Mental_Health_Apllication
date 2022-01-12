@@ -1,0 +1,223 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css\style.css' %}">
+
+  <title>Feed/Soulspace</title>
+</head>
+
+{% endblock %}
+
+{% block body %}
+<main>
+    <section class="container">
+        <div class="text-secondary px-4 py-5 text-center">
+            <div class="py-1">
+              <h1 class="display-5 fw-bold text-white">Shared Experiences</h1>
+              <div class="col-lg-6 mx-auto">
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="container px-5 my-4" align="center" style="font-size: 2rem;">
+            <div class="row mb-2" align="center">
+              <div class="col-md-12" align="center">
+                <div class="row g-0 border-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <p class="card-text mb-auto">“It will be ok. Maybe not now, maybe not for a while, but eventually.”-
+                      Fiona's
+                      Story</p>
+                    <p>
+                      <br>
+                      <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1"
+                        aria-expanded="false" aria-controls="collapseExample1">
+                        Read More
+                      </button>
+                    </p>
+                    <div class="collapse" id="collapseExample1">
+                      <div class="card card-body" style="background-color: var(--dark)!important;">
+                        When I was 12 I knew I was depressed. From the outside, Im not someone you would necessarily expect to
+                        have depression. I have lots of friends, my grades are good, a family that supports me. But, for
+                        months
+                        now, I’ve been lonely, had mental breakdowns over the littlest things.
+                        How did you overcome this experience?
+                        I’m still depressed, but what I do to help is make a list of everything I have going for me at the
+                        moment. It helps me see that I do have things worth living for.
+                        Help others by sharing a brief, positive message.
+                        It will be ok. Maybe not now, maybe not for a while, but eventually.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+          <!--Experience one-->
+          <div class="container px-5 my-4" align="center" style="font-size: 2rem;">
+            <div class="row mb-2" align="center">
+              <div class="col-md-12" align="center">
+                <div class="row g-0 border-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <p class="card-text mb-auto">“Together and in support we have power to heal and live.”- Heidi's Story</p>
+                    <p>
+                      <br>
+                      <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2"
+                        aria-expanded="false" aria-controls="collapseExample2">
+                        Read More
+                      </button>
+                    </p>
+                    <div class="collapse" id="collapseExample2">
+                      <div class="card card-body" style="background-color: var(--dark)!important;">
+                        I guess my stigma experience is from my family; they know I have anxiety & depression, just not to
+                        what
+                        extent. It was something not talked about in my family; my parents had the depression diagnosis as
+                        well
+                        – they never talked about it with us kids.
+                        How did you overcome this experience?
+                        I discussed it with a couple of my brothers/sister-in-laws back in May, after having a severe panic
+                        attack where I drove myself to our local ER. I told them how I felt when it happened so they could get
+                        a
+                        jist of what I felt like. But told them that it’s hard to explain as the attacks aren’t always the
+                        same.
+                        Help others by sharing a brief, positive message.
+                        Don’t be afraid of being put on meds for anxiety – they can help immensely! Explain to family,
+                        friends,
+                        coworkers that it’s hard to explain why you feel the way you do but to just be supportive.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+          <!--Experience two-->
+          <div class="container px-5 my-4" align="center" style="font-size: 2rem;">
+            <div class="row mb-2" align="center">
+              <div class="col-md-12" align="center">
+                <div class="row g-0 border-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <p class="card-text mb-auto">“Think Positive even when you see and feel negative.”- Diane's Story</p>
+                    <p>
+                      <br>
+                      <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3"
+                        aria-expanded="false" aria-controls="collapseExample3">
+                        Read More
+                      </button>
+                    </p>
+                    <div class="collapse" id="collapseExample3">
+                      <div class="card card-body" style="background-color: var(--dark)!important;">
+                        I lost an important job that I cherished due to going over permitted FMLA that I took. I was diagnosed
+                        with a mental illness and no one at my job seemed to care or didn’t know how to address. I dealt with
+                        stigma every single day and had to deal with sexual harassment too.
+                        How did you overcome this experience?
+                        I had to take a Medical leave and begin therapy.
+                        Help others by sharing a brief, positive message.
+                        Think Positive even when you see and feel negative. I take one minute at a time then I can concentrate
+                        on one day at a time.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+          <!--Experience three-->
+          <div class="container px-5 my-4" align="center" style="font-size: 2rem;">
+            <div class="row mb-2" align="center">
+              <div class="col-md-12" align="center">
+                <div class="row g-0 border-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <p class="card-text mb-auto">“Knowledge IS power.”- AhDee's Story</p>
+                    <p>
+                      <br>
+                      <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4"
+                        aria-expanded="false" aria-controls="collapseExample4">
+                        Read More
+                      </button>
+                    </p>
+                    <div class="collapse" id="collapseExample4">
+                      <div class="card card-body" style="background-color: var(--dark)!important;">
+                        I’ve been sad since I can remember, the same with being scared around people and often getting sick
+                        physically caused by anxiety. No one knew, not even me. I’ve lost job interviews, stopped studying
+                        multiple times and was not able to finish. I’ve had anxiety attacks in the middle of a group of
+                        people.
+                        It COULD be different for other people if we just Make It Ok to TALK about it.
+                        How did you overcome this experience?
+                        I diagnosed myself with help of the internet and eventually received psychiatric treatment. I talked
+                        about it, about how I felt. I gained knowledge. I understood. A decade later I think I AM being
+                        properly
+                        treated.
+                        Help others by sharing a brief, positive message.
+                        Knowledge IS power. ((It actually is…))
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+          <!--Experience four-->
+          <div class="container px-5 my-4" align="center" style="font-size: 2rem;">
+            <div class="row mb-2" align="center">
+              <div class="col-md-12" align="center">
+                <div class="row g-0 border-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <p class="card-text mb-auto">“Don’t let other people’s words distract you from your goal… to be happy once
+                      and for all.”- Katia's Story</p>
+                    <p>
+                      <br>
+                      <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5"
+                        aria-expanded="false" aria-controls="collapseExample5">
+                        Read More
+                      </button>
+                    </p>
+                    <div class="collapse" id="collapseExample5">
+                      <div class="card card-body" style="background-color: var(--dark)!important;">
+                        I’ve had depression for 6 years now but I was diagnosed a year ago. I’m 17 and when I told my parents
+                        they treated me like a freak. They said my life is better than a lot of people’s and I’m selfish, and
+                        that hurt a lot.
+                        How did you overcome this experience?
+                        How did you overcome this experience? (up to 100 words) I realized they don’t have what I have and it
+                        is
+                        what it is. They may think I’m weak but they can’t control how I feel and shouldn’t be able to tear me
+                        down.
+                        Help others by sharing a brief, positive message.
+                        Don’t let other people’s words distract you from your goal… to be happy once and for all.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+       </div>
+    </section>
+</main>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<!-- <link rel="stylesheet" href="{% static 'css\ex1.css' %}"> -->
+<link rel="stylesheet" href="{% static 'css\style.css' %}">
+{% endblock %}
+
+{% block body %}
+<main>
+  <section class="container">
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex4.png' %}" alt="" style="width: 100%; height: auto;">
+        <div  class="caption">
+          <h1>Accept emotions</h1>
+          <p>When you’re sad, anxious or angry, it’s normal to want to feel happier as soon as possible. But taking time to recognise your emotions—even the negative ones—can help you understand and manage your feelings..</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex4.png' %}" alt="" style="width: 100%; height: auto;">
+        <div  class="caption">
+          <p>
+            Think of a time when you felt really sad or stressed. Try to identify and name the emotion you felt.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex4.png' %}" alt="" style="width: 100%; height: auto;">
+        <div  class="caption">
+          <p>
+            Once you identify the emotion you were experiencing, complete this phrase out loud:<br><br>
+            “I was feeling ______, and that’s fine. ______ is something I was feeling at that moment, and not who I am.”</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex4.png' %}" alt="" style="width: 100%; height: auto;">
+        <div class="caption">
+          <p>The next time you’re stressed or upset, notice if you accept your emotions or try to avoid them. Practice accepting your emotions as temporary, and see if that makes your feelings easier to handle.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pagination">
+      <div class="buttons">
+        <br>
+        <button id="pre"
+        class="btn" style="font-size: 2rem;">Previous</button>
+        <button  id="nex" class="btn" style="font-size: 2rem;">Next</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="{% static 'js\app.js' %}"></script>
+
+{% endblock %}

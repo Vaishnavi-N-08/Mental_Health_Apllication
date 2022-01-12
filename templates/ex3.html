@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<!-- <link rel="stylesheet" href="{% static 'css\ex1.css' %}"> -->
+<link rel="stylesheet" href="{% static 'css\style.css' %}">
+
+{% endblock %}
+
+{% block body %}
+<main>
+  <section class="container">
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex3.png' %}" alt="" style="width: 100%; height: auto;">
+        <div  class="caption">
+          <h1>Practice Gratitude</h1>
+          <p>Practicing gratitude means remembering and appreciating the good things in life. When you find what you’re thankful for, your mood and your connections with others can improve.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex3.png' %}" alt="" style="width: 100%; height: auto;">
+        <div  class="caption">
+            <h1>Choose 3 things that you feel grateful for.</h1>
+          <p>You can do this exercise any time, and even record your answers in a sentence like this:<br><br>
+            “I’m grateful for ______, because it makes me feel ______.”</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex3.png' %}" alt="" style="width: 100%; height: auto;">
+        <div  class="caption">
+          <p>You can do this exercise any time, and even record your answers in a sentence like this:<br><br>“I’m grateful for ______, because it makes me feel ______.”</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination">
+      <div class="buttons">
+        <br>
+        <button id="pre"
+        class="btn" style="font-size: 2rem;">Previous</button>
+        <button  id="nex" class="btn" style="font-size: 2rem;">Next</button>
+      </div>
+    </div>
+    
+  </section>
+</main>
+
+<script src="{% static 'js\app.js' %}"></script>
+
+{% endblock %}

@@ -1,0 +1,368 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css\style.css' %}">
+
+  <title>Feed/Soulspace</title>
+</head>
+
+{% endblock %}
+
+{% block body %}
+<main>
+  <section class="container">
+    <div class=" text-secondary px-4 py-5 text-center">
+      <div class="py-2">
+        <h1 class="display-5 fw-bold text-white">Watch Motivational Videos</h1>
+        <div class="col-lg-6 mx-auto">
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Watch Motivational Videos-->
+    <div class="album py-5 ">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm" style="height: 25rem;">
+              <img src="{% static 'assests/f1.jpg' %}">
+              <div class="card-body">
+                <p class="card-text" style="height: 4rem;"> Conquering Depression: How I became my own Hero | Hunter
+                  Kent
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <!-- <div class="btn-group"> -->
+                    <a href="https://www.youtube.com/watch?v=Rv9SwZWVkOs" role="button"
+                      target="_blank"><button class="btn">Watch</button></a>
+                  <!-- </div> -->
+                  <small class="text-muted">8:52 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--row01 col01-->
+          <div class="col">
+            <div class="card shadow-sm" style="height: 25rem;">
+              <img src="{% static 'assests/f2.jpg' %}">
+              <div class="card-body">
+                <p class="card-text" style="height: 4rem;">People With Anxiety & Depression Share Advice For Anyone
+                  Who's
+                  Struggling | Soul
+                  Stories </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn " href="https://www.youtube.com/watch?v=NHf56w1AmPw" role="button"
+                      target="_blank">Watch</a>
+                  </div>
+                  <small class="text-muted">3:27 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--row01 col02-->
+          <div class="col">
+            <div class="card shadow-sm" style="height: 25rem;">
+              <img src="https://i.ytimg.com/vi/om4sEsIMy1M/maxresdefault.jpg">
+              <div class="card-body">
+                <p class="card-text" style="height: 4rem;">How to Overcome Depression & Anxiety from Within | Bhagavad
+                  Gita Life Lessons</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn " href="https://www.youtube.com/watch?v=om4sEsIMy1M&t=1s" role="button"
+                      target="_blank">Watch</a>
+                  </div>
+                  <small class="text-muted">8:22 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--row01 col03-->
+
+          <div class="col">
+            <div class="card shadow-sm" style="height: 25rem;">
+              <img src="{% static 'assests/f4.jpg' %}">
+
+              <div class="card-body">
+                <p class="card-text" style="height: 4rem;">How to get stuff done when you are depressed | Jessica Gimeno
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn " href="https://www.youtube.com/watch?v=njESlZa2b10" role="button"
+                      target="_blank">Watch</a>
+                  </div>
+                  <small class="text-muted">15:21 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--row02 col01-->
+          <div class="col">
+            <div class="card shadow-sm" style="height: 25rem;">
+              <img src="{% static 'assests/f5.jpeg' %}">
+              <div class="card-body">
+                <p class="card-text" style="height: 4rem;">How to cope with anxiety | Olivia Remes</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn " href="https://www.youtube.com/watch?v=WWloIAQpMcQ" role="button"
+                      target="_blank">Watch</a>
+                  </div>
+                  <small class="text-muted">15:16 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--row02 col02-->
+          <div class="col">
+            <div class="card shadow-sm" style="height: 25rem;">
+              <img src="{% static 'assests/f6.jpg' %}">
+              <div class="card-body">
+                <p class="card-text" style="height: 4rem;">How to make stress your friend | Kelly McGonigal</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn " href="https://www.youtube.com/watch?v=RcGyVTAoXEU" role="button"
+                      target="_blank">Watch</a>
+                  </div>
+                  <small class="text-muted">14:29 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--row02 col03-->
+          <div class="row mb-2">
+          </div>
+        </div>
+      </div>
+
+
+      <div class=" text-secondary px-4 py-5 text-center">
+        <div class="py-2">
+          <h1 class="display-5 fw-bold text-white">Listen to Calming Music</h1>
+          <div class="col-lg-6 mx-auto">
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Listen to Calming Music-->
+      <div class="album py-5 ">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm" style="height: 25rem;">
+                <img src="{% static 'assests/f7.jpg' %}">
+                <div class="card-body">
+                  <p class="card-text" style="height: 4rem;"> "Instant Relief From Anxiety & Stress" Peaceful Meditation
+                    Music, Deep Relaxing &
+                    Healing Music</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a class="btn " href="https://www.youtube.com/watch?v=JLJqUipWRWk" role="button"
+                        target="_blank">Listen</a>
+                    </div>
+                    <small class="text-muted">01:00:26 hr</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--row01 col01-->
+            <div class="col">
+              <div class="card shadow-sm" style="height: 25rem;">
+                <img src="{% static 'assests/f8.jpg' %}">
+                <div class="card-body">
+                  <p class="card-text" style="height: 4rem;">"Let Go Of All Negative Energy" Meditation Music, The
+                    Deepest
+                    Healing Music, Relax
+                    Mind Body </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a class="btn" href="https://www.youtube.com/watch?v=NHf56w1AmPw" role="button"
+                        target="_blank">Listen</a>
+                    </div>
+                    <small class="text-muted">3:02:42 hrs</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--row01 col02-->
+            <div class="col">
+              <div class="card shadow-sm" style="height: 25rem;">
+                <img src="{% static 'assests/f9.jpg' %}">
+                <div class="card-body">
+                  <p class="card-text" style="height: 4rem;">Remove Negative Thoughts & Subconscious Blockages,
+                    Meditation
+                    & Healing Music Relax
+                    Mind Body</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a class="btn" href="https://www.youtube.com/watch?v=D0eE8l87oyY" role="button"
+                        target="_blank">Listen</a>
+                    </div>
+                    <small class="text-muted">45:02 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--row01 col03-->
+
+            <div class="col">
+              <div class="card shadow-sm" style="height: 25rem;">
+                <img src="{% static 'assests/f10.jpg' %}">
+
+                <div class="card-body">
+                  <p class="card-text" style="height: 4rem;">Namaste: Devi Prayer, Hindu, Spiritual music, gentle,
+                    calming, peaceful music,
+                    relaxing music</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a class="btn" href="https://www.youtube.com/watch?v=UWG7iRxRNLM&t=3s" role="button"
+                        target="_blank">Listen</a>
+                    </div>
+                    <small class="text-muted">1:00:00 hr</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--row02 col01-->
+            <div class="col">
+              <div class="card shadow-sm" style="height: 25rem;">
+                <img src="{% static 'assests/f11.jpg' %}">
+                <div class="card-body">
+                  <p class="card-text" style="height: 4rem;">Tayata Om Mantra Healing All Sufferings</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a class="btn" href="https://www.youtube.com/watch?v=pUjuUtLPk6Y&t=1s" role="button"
+                        target="_blank">Listen</a>
+                    </div>
+                    <small class="text-muted">1:05:16 hr</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--row02 col02-->
+            <div class="col">
+              <div class="card shadow-sm" style="height: 25rem;">
+                <img src="{% static 'assests/f12.jpg' %}">
+                <div class="card-body">
+                  <p class="card-text" style="height: 4rem;">Meditation Music for Anxiety & Panic Attacks: Depression &
+                    Stress Healing Music,
+                    Relax Mind Body</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a class="btn" href="https://www.youtube.com/watch?v=p-aFWl27TCM&t=30s" role="button"
+                        target="_blank">Listen</a>
+                    </div>
+                    <small class="text-muted">02:59:17 hrs</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--row02 col03-->
+            <div class="row mb-2">
+            </div>
+          </div>
+        </div>
+        <div class="text-secondary px-4 py-5 text-center">
+          <div class="py-2">
+            <h1 class="display-5 fw-bold text-white">Exercise!</h1>
+            <div class="col-lg-6 mx-auto">
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              </div>
+            </div>
+          </div>
+        </div><!-- Exercise-->
+        <div class="container px-4 py-5" id="custom-cards">
+          <!-- Exercise-->
+          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                style="background-image: url('unsplash-photo-1.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <img src="{% static 'assests/f13.jpg' %}" class="rounded corners">
+                  <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Set off that Runner's High</h2>
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p> “The most tangible example of exercise stimulating certain brain chemicals is the runners high
+                      that many athletes report experiencing once crossing a certain threshold of exertion while
+                      running,”
+                      explains Muzina. That euphoria is due to the release of endorphins in the brain in response to the
+                      sustained physical activity. Endorphins are our bodys natural morphine and, when released by
+                      special glands in our brains, they can produce a sense of well-being or joy and also decrease pain
+                      levels. Experts recommend 20 to 30 minutes most days of the week.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                style="background-image: url('unsplash-photo-2.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <img src="{% static 'assests/f14.jpg' %}" class="rounded corners">
+                  <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Practice Yoga</h2>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p>“Eastern traditions such as yoga have a wonderful antidepressant effect in that they improve
+                      flexibility; involve mindfulness, which breaks up repetitive negative thoughts; increase strength;
+                      make you aware of your breathing; improve balance; and contain a meditative component,” says
+                      Norman
+                      E. Rosenthal, MD, a clinical professor of psychiatry at the Georgetown University School of
+                      Medicine
+                      in Washington, D.C. Ohm — in a study of 65 women with depression and anxiety, the 34 women who
+                      took
+                      a yoga class twice a week for two months showed a significant decrease in depression and anxiety
+                      symptoms, compared to the 31 women who were not in the class.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                style="background-image: url('unsplash-photo-3.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                  <img src="{% static 'assests/f15.jpg' %}" class="rounded corners">
+                  <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"> Simply Go Outside</h2>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p>If you enjoy being outdoors, even simple activities such as gardening, throwing a ball around
+                      with
+                      your kids, or washing your car may do you some good. Thats because a healthy dose of sunlight has
+                      been shown to boost mood, likely due to the fact that sunshine stimulates our serotonin levels
+                      (drops in serotonin during the darker, colder months have been linked to seasonal affective
+                      disorder, or SAD).
+
+                      “Just moving your body inside or out is exercise,” says Shoshana Bennett, PhD, a clinical
+                      psychologist and author of Postpartum Depression for Dummies. “Choose whatever works for you,
+                      depending on your functioning level, energy, and preferences.”</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+  </section>
+</main>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+{% endblock %}

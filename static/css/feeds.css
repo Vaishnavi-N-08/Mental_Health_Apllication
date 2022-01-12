@@ -1,0 +1,63 @@
+.learning-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.learning-card {
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background: var(--smoke);
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 20px 20px rgba(241, 182, 20, 0.671);
+    /* box-shadow: 20px 20px #3b1464; */
+    transition: 0.5s;
+    font-size: 2rem;
+}
+.learning-circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    clip-path: circle(180px at center 0);
+    text-align: center;
+}
+.learning-container h1 {
+    color: var(--pure);
+    /* font-size: 4.5em; */
+    font-size: 5vh;
+    padding: 30px 0;
+}
+.learning-content {
+    position: absolute;
+    bottom: 10px;
+    padding: 0 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.learning-container p {
+    color: var(--dark);
+}
+
+.learning-container a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--primary);
+    color: var(--pure);
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.learning-bottom-part {
+    display: flex;
+    justify-content: space-around;
+}

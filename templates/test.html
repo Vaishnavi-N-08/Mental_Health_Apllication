@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block head %}
+<title>Test</title>
+<link rel="stylesheet" href="{% static 'css\style.css' %}">
+{% endblock %}
+
+{% block body %}
+
+<main>
+    <section class="container">
+            <form action='/result' method='POST'>
+                {% csrf_token %}
+                {% for key,value in o.items %}
+                <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                    <br>
+                    <span class="d-block" style="font-size: large;">{{key}}</span>
+                    <br>
+                    <br>
+                    {% for j in value %}
+                    <div class="d-flex" style="font-size: large;display: flex!important;
+                    flex-direction: row;
+                    align-content: center;
+                    justify-content: flex-start;
+                    align-items: center;">
+                        <input type="radio" value='{{j}}' name='{{key}}' />{{j}}
+                    </div>
+                    <br>
+                    {% endfor %}
+                    <br>
+                </div>
+                {% endfor %}
+                <div class="d-flex justify-content-center my-4 py-5">
+                    <input class="btn btn-primary" type="submit" value="Submit">
+                </div>
+            </form>
+    </section>
+</main>
+{% endblock %}

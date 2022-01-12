@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<!-- <link rel="stylesheet" href="{% static 'css\ex1.css' %}">
+<link rel="stylesheet" href="{% static 'css\navbar.css' %}"> -->
+<link rel="stylesheet" href="{% static 'css\style.css' %}">
+
+{% endblock %}
+
+{% block body %}
+<main>
+  <section class="container" >
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex1.png' %}" alt="" style="width: 100%; height: auto;">
+        <div  class="caption" >
+          <h1>Show self-compassion</h1>
+          <p>When you feel overwhelmed by uncomfortable emotions, you can sometimes judge yourself too harshly. This can
+            happen when you’re sad, anxious, angry, or even when you don’t feel anything at all.<br><br>
+            In these moments of judgment, treating yourself with the same kindness you’d give to a friend might help
+            improve your mood and make you feel less stressed.
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex1.png' %}" alt="" style="width: 100%; height: auto;">
+        <div  class="caption">
+          <h1>Show self-compassion</h1>
+          <p>Think of a time when a friend or family member was feeling bad about themselves, and came to you for help.<br><br>
+            How did you respond to them? If you comforted them or gave them advice, remember how it felt for you—and think about how it might have felt for them to receive your kind words.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex1.png' %}" alt="" style="width: 100%; height: auto;">
+        <div  class="caption">
+          <h1>Show self-compassion</h1>
+          <p>Now think of what it’s like when you feel bad about yourself. What do you say to yourself when you’re down? Is it different from how you talk to others? Why do you think that is?
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex1.png' %}" alt="" style="width: 100%; height: auto;">
+        <div class="caption">
+          <h1>Show self-compassion</h1>
+          <p>The next time you feel discouraged or bad about yourself, try talking to yourself in the same way you’d talk to your family or friends. <br><br>
+            See if you can feel the difference: Usually, it’s easier to show understanding and kindness to others. If you speak to yourself with that same compassion, it might start to change the way you think about yourself and the world around you.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pagination">
+      <div class="buttons">
+        <br>
+        <button id="pre"
+        class="btn" style="font-size: 2rem;">Previous</button>
+        <button  id="nex" class="btn" style="font-size: 2rem;">Next</button>
+      </div>
+    </div>
+    
+  </section>
+</main>
+<script src="{% static 'js\app.js' %}"></script>
+{% endblock %}

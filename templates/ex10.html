@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<!-- <link rel="stylesheet" href="{% static 'css\ex1.css' %}"> -->
+<link rel="stylesheet" href="{% static 'css\style.css' %}">
+
+{% endblock %}
+
+{% block body %}
+<main>
+  <section class="container">
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex10.png' %}" alt="" style="width: 100%; height: auto;">
+        <div  class="caption">
+          <h1>Recognise your strengths</h1>
+          <p>The ups and downs of everyday life can affect our self-esteem. Take a minute to write about your strengths or the things you like about yourself, and you might start to feel more confident.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex10.png' %}" alt="" style="width: 100%; height: auto;">
+        <div  class="caption">
+          <p>Think of something you’re good at. This can be a trait, like being a good listener, or a skill, like baking amazing cookies. If you’re having difficulty thinking of a strength, you can reach out to someone who knows you well for ideas.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex10.png' %}" alt="" style="width: 100%; height: auto;">
+        <div  class="caption">
+          <p>Once you’ve identified it, write down your strength. Then think about the last time you used it and write that down, too.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex10.png' %}" alt="" style="width: 100%; height: auto;">
+        <div class="caption">
+          <p>Think of 2 more strengths. Write them down as well, then write about the last time you used them.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex10.png' %}" alt="" style="width: 100%; height: auto;">
+        <div class="caption">
+          <p>How did listing your strengths make you feel? If it was helpful, try thinking about a time in the upcoming month when you could use one of them, and write that down too.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination">
+      <div class="buttons">
+        <br>
+        <button id="pre"
+        class="btn" style="font-size: 2rem;">Previous</button>
+        <button  id="nex" class="btn" style="font-size: 2rem;">Next</button>
+      </div>
+    </div>
+    
+  </section>
+</main>
+
+<script src="{% static 'js\app.js' %}"></script>
+
+{% endblock %}

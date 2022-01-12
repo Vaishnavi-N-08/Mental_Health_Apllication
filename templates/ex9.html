@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<!-- <link rel="stylesheet" href="{% static 'css\ex1.css' %}"> -->
+<link rel="stylesheet" href="{% static 'css\style.css' %}">
+
+{% endblock %}
+
+{% block body %}
+<main>
+  <section class="container">
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex9.png' %}" alt="" style="width: 100%; height: auto;">
+        <div  class="caption">
+          <h1>Feel compassion for others</h1>
+          <p>It can be helpful to step back and see the world through someone else’s eyes. By doing this, you start to improve how you cope with your own stress and conflict.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex9.png' %}" alt="" style="width: 100%; height: auto;">
+        <div  class="caption">
+          <p>Think of someone who you’ve had a disagreement with or who made you feel stressed recently. Visualise that person and the situation. How did you feel during your conflict?</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex9.png' %}" alt="" style="width: 100%; height: auto;">
+        <div  class="caption">
+          <p>Now shift your perspective and imagine what the other person was feeling or going through at that time. What struggles and stress might they have been experiencing?</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="box-search">
+      <div class="thumbnail">
+        <img src="{% static 'C:\SDP\SDPApp\static\assests\ex9.png' %}" alt="" style="width: 100%; height: auto;">
+        <div class="caption">
+          <p>Even though you and this person disagree, try to intentionally see their side. Then, take a moment to reflect: Does imagining their perspective help you understand the situation a little better?
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="pagination">
+      <div class="buttons">
+        <br>
+        <button id="pre"
+        class="btn" style="font-size: 2rem;">Previous</button>
+        <button  id="nex" class="btn" style="font-size: 2rem;">Next</button>
+      </div>
+    </div>
+    
+  </section>
+</main>
+
+<script src="{% static 'js\app.js' %}"></script>
+
+{% endblock %}

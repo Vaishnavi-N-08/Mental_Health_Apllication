@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<!-- <link rel="stylesheet" href="{% static 'css\Ex.css' %}"> -->
+<link rel="stylesheet" href="{% static 'css\style.css' %}">
+
+{% endblock %}
+
+{% block body %}
+<main>
+    <section class="container">
+        <div class="header-block3">
+            <div class="content3">
+                <h1>Magical solution</h1>
+                <h3>Here is an exercise for you <br>
+                    Follow the steps you will find an amazing change in your mood</h3>
+                <p>Feeling sad from time to time is a normal part of life. SoulSpace works with experts to create
+                    exercises that may help improve your mood, which you can do at your own pace whenever you need
+                    support. </p>
+                <br>
+            </div>
+        </div>
+        <div class="card">
+            <a href="ex1">
+                <img src="{% static 'C:\SDP\SDPApp\static\assests\seft compassion.svg' %} "
+                    style="width: 100%; height: auto;" />
+            </a>
+        </div>
+        <div class="card">
+            <a href="ex2">
+                <img src="{% static 'C:\SDP\SDPApp\static\assests\identify values.svg' %} "
+                    style="width: 100%; height: auto;" />
+            </a>
+        </div>
+        <div class="card">
+            <a href="ex3">
+                <img src="{% static 'C:\SDP\SDPApp\static\assests\gratitute.svg' %} "
+                    style="width: 100%; height: auto;" />
+            </a>
+        </div>
+        <div class="card">
+            <a href="ex4">
+                <img src="{% static 'C:\SDP\SDPApp\static\assests\accept emotions.svg' %} "
+                    style="width: 100%; height: auto;" />
+            </a>
+        </div>
+        <div class="card">
+            <a href="ex5">
+                <img src="{% static 'C:\SDP\SDPApp\static\assests\plan.svg' %} " style="width: 100%; height: auto;" />
+            </a>
+        </div>
+        <div class="card">
+            <a href="ex6">
+                <img src="{% static 'CC:\SDP\SDPApp\static\assests\breath.svg' %} "
+                    style="width: 100%; height: auto;" />
+            </a>
+        </div>
+        <div class="card">
+            <a href="ex7">
+                <img src="{% static 'C:\SDP\SDPApp\static\assests\should.svg' %} " style="width: 100%; height: auto;" />
+            </a>
+        </div>
+        <div class="card">
+            <a href="ex8">
+                <img src="{% static 'C:\SDP\SDPApp\static\assests\5min.svg' %} " style="width: 100%; height: auto;" />
+            </a>
+        </div>
+        <div class="card">
+            <a href="ex9">
+                <img src="{% static 'C:\SDP\SDPApp\static\assests\compassion.svg' %} "
+                    style="width: 100%; height: auto;" />
+            </a>
+        </div>
+        <div class="card">
+            <a href="ex10">
+                <img src="{% static 'C:\SDP\SDPApp\static\assests\strength.svg' %} "
+                    style="width: 100%; height: auto;" />
+            </a>
+        </div>
+
+        <div class="header-block3">
+            <div class="content3">
+                <p>These exercises aren’t a replacement for professional care. If you need medical care or are
+                    struggling with your mental health, please consult a doctor or therapist. If you’re in crisis or
+                    are thinking about hurting yourself, helplines can also provide free, confidential support:</p>
+                <br>
+                <h4>Call AASRA</h4><br>
+                <p>91-22-27546669</p>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="{% static 'js\app.js' %}"></script>
+{% endblock %}

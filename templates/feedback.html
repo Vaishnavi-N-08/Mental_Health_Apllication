@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block head %}
+<title>Soul Space</title>
+<link rel="stylesheet" href="{% static 'css\style.css' %}">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block body %}
+
+
+<main>
+    <section class="container">
+        <div id="registrationBox" class="registration-box">
+            <div class="registration-right">
+              <div class="registration-container">
+                <div class="title" style="text-align: center; font-weight: bold;">Give Your Valuable Suggestion
+                </div>
+                <div style="text-align: center; padding: 20px; font-size: 2rem;">Thanks For viewing our website .Hopefully it help you a lot.Helping the depressed ypungsters to get out of the fatal depression is my intension only.If you like this website and want any more things in it kindliy fill out the feedback form.Your valuable feedback will add value to my project</div>
+                <div class="content" style="font-size: 1.5rem;"> 
+                  <form  method='POST' enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="user-details">
+                      <div class="input-box">
+                        <span class="details" >Full Name</span>
+                        <input type="text" name="fullname" id="fullname" placeholder="Enter your name" required>
+                      </div>
+                      <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" name="email" id="email" placeholder="Enter your email" required>
+                      </div>
+                      <div class="input-box">
+                        <span class="details">Mobile No</span>
+                        <input type="tel" name="number" id="number" placeholder="Enter Mobile No" required>
+                      </div>
+                      <div class="input-box">
+                        <span class="details">Your Suggestion</span>
+                        <input type="text" name="suggestion_p" id="suggestion_p" placeholder="Your Suggestion" required>
+                      </div>
+                    <div class="sub-btn">
+                        <a><button class="btn">Submit</button></a>
+                    </div>
+                  </form>
+          
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    </section>
+</main>
+{% endblock body %}
