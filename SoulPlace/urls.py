@@ -5,7 +5,7 @@ from . import views
 urlpatterns = [    
     path('feed',views.feed,name='feed'),
     path('base',views.base,name='base'),
-    path('trail',views.trail,name='trail'),
+    path('',views.trail,name='trail'),
     path('feed',views.feed,name='feed'),
     path('exercise',views.exercise,name='exercise'),
     path('register',views.register,name='register'),
