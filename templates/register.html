@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,64 +10,71 @@
     <title>Login / Sign Up</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
+
 <body>
     <main>
-            <div style="padding-top: 10px; font-size: xx-large;" align="center">
-                <!-- <div class="register-logo">
+        <div style="padding-top: 10px; font-size: xx-large;" align="center">
+            <!-- <div class="register-logo">
                     <img src="{% static 'assets\Green-logo.png' %}">
                 </div> -->
-                <p class="p1" style="margin: 1%;font-size:7vh ; ">SoulSpace<p>
-            </div>
-            <div class="register-hero">
-                <div class="register-form-box">
-                 <div class="register-button-box">
-                     <div id="register-btn"></div>
-                     <button type="button" class="register-toggle-btn" onclick="login()">LogIn</button>
-                     <button type="button" class="register-toggle-btn" onclick="register()">Register</button>
-                 </div>
-                 <!-- <div class="register-social-icons">
+            <p class="p1" style="margin: 1%;font-size:7vh ; ">SoulSpace
+            <p>
+        </div>
+        <div class="register-hero">
+            <div class="register-form-box">
+                <div class="register-button-box">
+                    <div id="register-btn"></div>
+                    <button type="button" class="register-toggle-btn" onclick="login()">LogIn</button>
+                    <button type="button" class="register-toggle-btn" onclick="register()">Register</button>
+                </div>
+                <!-- <div class="register-social-icons">
                    <img src="{% static 'assets\tw.png' %}">
                    <img src="{% static 'assets\fb.png' %}">
                    <img src="{% static 'assets\gp.png' %}">
                </div> -->
-               <form id="register-login" class="register-input-group"  method='POST' action="register">
-                {% csrf_token %}
-                   <input type="text" class="register-input-field" placeholder="Email Id" name="emailId" required>
-                   <input type="text" class="register-input-field" placeholder="Enter Password" name="password" required>
-                   <input type="text" name="log" value="yes" style="display: none;">
-                   <button type="submit" class="register-submit-btn">Log In</button>
+                <form id="register-login" class="register-input-group" method='POST' action="register">
+                    {% csrf_token %}
+                    <input type="text" class="register-input-field" placeholder="Email Id" name="emailId" required>
+                    <input type="text" class="register-input-field" placeholder="Enter Password" name="password"
+                        required>
+                    <input type="text" name="log" value="yes" style="display: none;">
+                    <button type="submit" class="register-submit-btn">Log In</button>
 
-                   {% for message in messages %}
-                   <p style="text-align: center; color: red;">{{message}}<p>
-                   {% endfor %}
+                    {% for message in messages %}
+                    <p style="text-align: center; color: red;">{{message}}
+                    <p>
+                        {% endfor %}
 
-               </form>
-               <form id ="register-register" class="register-input-group"  method='POST' action="register">
-               {% csrf_token %}
-                   <input type="text" class="register-input-field" placeholder="Enter Full Name" name="userId" required>
-                   <input type="email" class="register-input-field" placeholder="Email ID" name="emailId" required>
-                   <input type="text" class="register-input-field" placeholder="Enter Password" name="password" required>
-                   <input type="checkbox" class="register-check-box" required><span style="color: black!important;">I agree to the terms and conditions</span>
-                   <input type="text" name="log" value="no" style="display: none;">
-                   <button type="submit" class="register-submit-btn">Register</button>
+                </form>
+                <form id="register-register" class="register-input-group" method='POST' action="register">
+                    {% csrf_token %}
+                    <input type="text" class="register-input-field" placeholder="Enter Full Name" name="userId"
+                        required>
+                    <input type="email" class="register-input-field" placeholder="Email ID" name="emailId" required>
+                    <input type="text" class="register-input-field" placeholder="Enter Password" name="password"
+                        required>
+                    <input type="checkbox" class="register-check-box" required><span style="color: black!important;">I
+                        agree to the terms and conditions</span>
+                    <input type="text" name="log" value="no" style="display: none;">
+                    <button type="submit" class="register-submit-btn">Register</button>
 
-                   {% for message in messages %}
-                   <p style="text-align: center; color: red;">{{message}}</p>
-                   {% endfor %}
+                    {% for message in messages %}
+                    <p style="text-align: center; color: red;">{{message}}</p>
+                    {% endfor %}
 
-               </form>
+                </form>
             </div>
-            </div>
+        </div>
         <script>
             var x = document.getElementById("register-login");
             var y = document.getElementById("register-register");
             var z = document.getElementById("register-btn");
-            function register(){
+            function register() {
                 x.style.left = "-400px";
                 y.style.left = "50px";
                 z.style.left = "110px";
             }
-            function login(){
+            function login() {
                 x.style.left = "50px";
                 y.style.left = "450px";
                 z.style.left = "0px";
@@ -74,4 +82,5 @@
         </script>
     </main>
 </body>
+
 </html>
