@@ -38,12 +38,12 @@ def register(request):
                 messages.info(request,"Invalid credentials")
                 return redirect("register")
     else:
-        return render (request,"register.html")
+        return render (request,"templates/register.html")
 
 def logout(request):
     auth.logout(request)
-    return redirect('trail')        
-    
+    return redirect('trail')
+
 
 original_questions = {
     # Format is 'question':[options]
@@ -201,7 +201,7 @@ original_questions = {
 def test(request):
     questions = list(original_questions.keys())
     context = {"q": questions,"o": original_questions}
-    return render(request, 'test.html',context)
+    return render(request, 'templates/test.html',context)
 
 def result(request):
     if request.method == "POST":
@@ -242,7 +242,7 @@ def result(request):
 
         messages.add_message(request,20,mess)
 
-        return render(request,'result.html', {'score':score})
+        return render(request,'templates/result.html', {'score':score})
     else:
         return redirect("test")
 
@@ -256,47 +256,47 @@ def result(request):
 
 
 def trail(request):
-    return render(request,'trail.html')
+    return render(request,'templates/trail.html')
 def review(request):
-    return render(request,'review.html')
+    return render(request,'templates/review.html')
 def feed(request):
-    return render(request,'feed.html')
+    return render(request,'templates/feed.html')
 def base(request):
-    return render(request,'base.html')
+    return render(request,'templates/base.html')
 def exercise(request):
-    return render(request,'exercise.html')
+    return render(request,'templates/exercise.html')
 def feed2(request):
-    return render(request,'feed2.html')
+    return render(request,'templates/feed2.html')
 def ex1(request):
-    return render(request,'ex1.html')
+    return render(request,'templates/ex1.html')
 def ex2(request):
-    return render(request,'ex2.html')
+    return render(request,'templates/ex2.html')
 
 def ex3(request):
-    return render(request,'ex3.html')
+    return render(request,'templates/ex3.html')
 
 def ex4(request):
-    return render(request,'ex4.html')
+    return render(request,'templates/ex4.html')
 
 def ex5(request):
-    return render(request,'ex5.html')
+    return render(request,'templates/ex5.html')
 
 def ex6(request):
-    return render(request,'ex6.html')
+    return render(request,'templates/ex6.html')
 
 def ex7(request):
-    return render(request,'ex7.html')
+    return render(request,'templates/ex7.html')
 
 def ex8(request):
-    return render(request,'ex8.html')
+    return render(request,'templates/ex8.html')
 
 def ex9(request):
-    return render(request,'ex9.html')
+    return render(request,'templates/ex9.html')
 
 def ex10(request):
-    return render(request,'ex10.html')
+    return render(request,'templates/ex10.html')
 def feed(request):
-    return render(request,'feed.html')
+    return render(request,'templates/feed.html')
 def feedback(request):
     if request.method == 'POST':
         fullname = request.POST['fullname']
@@ -310,6 +310,6 @@ def feedback(request):
         success = True
         return redirect('trail')
     else:
-        return render (request,"feedback.html")
+        return render (request,"templates/feedback.html")
 
 

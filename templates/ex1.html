@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'templates/base.html' %}
 {% load static %}
 {% block head %}
 <!-- <link rel="stylesheet" href="{% static 'css\ex1.css' %}">
@@ -54,7 +54,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="pagination">
       <div class="buttons">
         <br>
@@ -62,7 +62,7 @@
         <a href="{% url 'ex2' %}"><button  id="nex" class="btn" style="font-size: 2rem;">Next</button></a>
       </div>
     </div>
-    
+
   </section>
 </main>
 <script src="{% static 'js\app.js' %}"></script>
